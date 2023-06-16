@@ -9,7 +9,6 @@ function writeToFile(filename, response, callback) {
 }
 
 function download(fileUrl, filename, callback) {
-console.log('Downloading', fileUrl);
   https
     .get(fileUrl, function(response) {
       if (
