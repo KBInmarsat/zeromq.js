@@ -88,15 +88,4 @@ if (process.platform === "win32") {
     buildZMQ(SCRIPT_PATH, DIR_NAME);
     process.exit(0);
   }
-
-  download(TAR_URL, FILE_NAME, function(err) {
-    if (err) {
-      handleError(err);
-    }
-    try {
-      buildZMQ(SCRIPT_PATH, DIR_NAME);
-    } catch (err) {
-      handleError(err);
-    }
-  });
 }
